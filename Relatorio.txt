@@ -1,0 +1,29 @@
+comandos:
+
+	TIPO DA MENSAGEM [int - Destino / int - Remetente / tipo / comando ]
+
+	Jogar Carta = Destino = remetente = Joga uma stuct de carta e passa pelas 4 maos
+	Comprar 1 Carta = Msg para o Dealer precisa ter player de origem - Comprar 1 carta do topo do baralho pq nao tem carta para jogar.
+	Comprar 2 Cartas = Msg para o Dealer precisa ter player de origem - Recebeu uma carta +2.
+	Jogo Acabou = Precisa ter quem acabou - Alguem atingiu numero 0 de cartas.
+	Começo de jogo = Precisa ter o destinatario - recebe 7 cartas.
+
+
+
+Verificações:
+
+	Se carta = +2 = Compra + 2
+	Se carta = pula = Pula vez
+	Se Bastão = Joga
+	Verifica se a Msg que recebeu é de seu processamento (Se recebe uma msg pedindo cartas, verifica se é o dealer, se recebe carta verifica se é o player destino) (VALE A PENA SEMPRE TER UM CAMPO DE DESTINATARIO E REMETENTE Unicos usos sao nas compras de +1 e +2 e Inicio de jogo)
+
+	COMO VERIFICAR SE TODAS AS MAQUINAS ESTAO CONECTADAS  ?
+
+
+Ideias:
+
+	Jogadores saber quantidade de cartas dos outros.
+	Jogador pode comprar tendo carta para jogar ? Nao pode comprar.
+	A compra sempre é automatica.
+
+	Como fazer para empilhar +2 ? Quando a carta do topo é +2, na mensagem tem um campo contador com quantos está amontoados.
